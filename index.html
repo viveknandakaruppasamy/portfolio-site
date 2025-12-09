@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivek Nanda K — SOC Portfolio</title>
+
+  <style>
+    :root {
+      --accent:#0ea5a4;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --shadow:0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f6f8fb;
+      color:#0f172a;
+    }
+
+    .container {
+      width:90%;
+      max-width:1100px;
+      margin:0 auto;
+      padding:20px;
+    }
+
+    /* NAVBAR */
+    nav {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:25px;
+    }
+    nav a {
+      margin-left:20px;
+      text-decoration:none;
+      color:var(--accent);
+      font-weight:600;
+    }
+
+    /* HEADER */
+    .header {
+      display:flex;
+      align-items:center;
+      gap:25px;
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+    }
+    .photo {
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      overflow:hidden;
+      border:3px solid #fff;
+      box-shadow:var(--shadow);
+    }
+    .photo img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+    }
+
+    /* SECTIONS */
+    section {
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      margin-top:20px;
+    }
+    h2 {
+      margin-top:0;
+      color:#0f172a;
+    }
+    p {
+      color:var(--muted);
+      line-height:1.5;
+    }
+
+    /* SKILLS */
+    .skills {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .skill {
+      padding:8px 14px;
+      background:#f0fdfd;
+      border-radius:10px;
+      font-weight:600;
+      border:1px solid #d2f5f3;
+      color:#0a827f;
+    }
+
+    /* PROJECT CARD */
+    .project-card {
+      background:#fff;
+      padding:16px;
+      border-radius:14px;
+      border:1px solid #eef3ff;
+      margin-bottom:14px;
+    }
+    .project-card h3 {
+      margin:0;
+    }
+    .btn-link {
+      display:inline-block;
+      margin-top:10px;
+      margin-right:12px;
+      color:var(--accent);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    /* BUTTON */
+    .btn {
+      display:inline-block;
+      background:#0ea5a4;
+      padding:12px 18px;
+      color:#ffffff !important;
+      font-weight:700;
+      border-radius:10px;
+      text-decoration:none !important;
+      margin-top:10px;
+      font-size:16px;
+      border:2px solid #0a7d78;
+    }
+
+    /* CONTACT */
+    #contact a {
+      color:var(--accent);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div><strong>Vivek Portfolio</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="resume.pdf" download>Resume</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="photo">
+      <img src="profile.jpg" alt="Vivek Photo">
+    </div>
+    <div>
+      <h1>VIVEK NANDA K</h1>
+      <p>Aspiring SOC Analyst • SIEM • Linux • Networking • OSINT</p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring SOC Analyst with hands-on experience in Splunk, Linux, OSINT, and network enumeration.
+      I completed internships in real-world SOC and Android security tasks. Passionate about detection
+      engineering, threat analysis, incident response, and log monitoring.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Splunk SIEM</div>
+      <div class="skill">Linux</div>
+      <div class="skill">Networking</div>
+      <div class="skill">TryHackMe</div>
+      <div class="skill">OSINT</div>
+      <div class="skill">Nmap</div>
+      <div class="skill">UFW Firewall</div>
+      <div class="skill">Wireshark</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Nmap Network Scanning</h3>
+      <p>Service detection, OS fingerprinting, and enumeration.</p>
+      <a class="btn-link" href="https://github.com/viveknandakaruppasamy/Security-Analyst-Internship" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>UFW Firewall Configuration</h3>
+      <p>Configured inbound-outbound rules and validated using Nmap scans.</p>
+      <a class="btn-link" href="https://github.com/viveknandakaruppasamy/Security-Analyst-Internship" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>OSINT Investigation Report</h3>
+      <p>Used Sherlock, Google Dorking, theHarvester for intelligence gathering.</p>
+      <a class="btn-link" href="https://github.com/viveknandakaruppasamy/cyber-project" target="_blank">View Report</a>
+    </div>
+
+    <!-- NEW SPLUNK PROJECT -->
+    <div class="project-card">
+      <h3>Splunk Basics — Cyber Advent 2026 (TryHackMe)</h3>
+      <p>
+        Completed TryHackMe’s Cyber Advent 2026 Splunk challenge, learning log ingestion,
+        SPL queries, event filtering, dashboards, and SOC-style log investigation.
+      </p>
+      <a class="btn-link" href="https://www.linkedin.com/posts/vivek-nanda-k_splunk-basics-did-you-siem-activity-7404204860096638976-H-Bf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-78RkBxOcaelDXJV7O9E7y-pM9UuYRHy0" target="_blank">View Linkedin Post</a>
+    </div>
+
+  </section>
+
+  <!-- INTERNSHIPS -->
+  <section id="internships">
+    <h2>Internships</h2>
+
+    <div class="project-card">
+      <h3>Security Analyst Intern — Oasis Infobyte</h3>
+      <p>Worked on Nmap scanning, documentation, OSINT & reporting.</p>
+      <a class="btn-link" href="https://drive.google.com/file/d/1FEIOAAq0MZrL6cFU6BMGbm4SG1gQcP8c/view?usp=sharing" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Android Hacking & SOC Intern — NullClass</h3>
+      <p>Real-world SOC operations: log monitoring, detection & triage.</p>
+      <a class="btn-link" href="https://drive.google.com/file/d/1Frx2703oKSzkdzrQMuGRkhDLTc7AHfyr/view?usp=sharing" target="_blank">View Offer Letter</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Acmegrade — OSINT Investigation Project</h3>
+      <p>Structured OSINT investigation using Sherlock, Holehe, theHarvester & social recon.</p>
+      <a class="btn-link" href="https://github.com/viveknandakaruppasamy/cyber-project" target="_blank">View OSINT Report</a>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:viveknandak2005@gmail.com">viveknandak2005@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vivek-nanda-k/" target="_blank">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/viveknandakaruppasamy" target="_blank">Visit GitHub</a></p>
+
+    <a class="btn" href="Resume (4).pdf" download>Download Resume</a>
+  </section>
+
+</div>
+
+</body>
+</html>
